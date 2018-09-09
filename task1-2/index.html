@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
-    <title></title>
-    <link rel="stylesheet" href="style/style.css">
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
   <div class="page">
     <header class="header"></header>
     <main class="content">
       <form class="registration">
-        <p class="registration__text-header">Регистрация</p>
-        <p class="registration__text-email">E-mail:<input class="registration__login registration__login_active"></p>
-        <di class="password-block">
-          <p class="password-block__text-password">Пароль:<input class="password-block__password password-block__password_active" type="password"></p>
-          <p class="password-block__text-password-confirmation">Подтверждение пароля:<input class="password-block__password password-block__password-repeat password-block__password_active" type="password"></p>
-        </di>
-        <input class="registration__check-confirmation" type="checkbox">
+        <p class="registration_text_header">Регистрация</p>
+        <p class="registration_text_email">E-mail:<input class="registration_login registration_login_active"></p>
+        <div class="password_block">
+          <p class="password_block_text_password">Пароль:<input class="password_block_password password_block_password_active" type="password"></p>
+          <p class="password_block_text_password_confirmation">Подтверждение пароля:<input class="password_block_password password_block_password_repeat password_block_password_active" type="password"></p>
+        </div>
+        <input class="registration_check_confirmation" type="checkbox">
         <label>Я согласен с условиями и правилами сайта</label>
-        <p><input class="registration__button registration__button_active" type="submit" value="Регистрация"></p>
+        <p><input class="registration_button registration_button_active" type="submit" value="Регистрация"></p>
       </form>
     </main>
     <div class="footer">
     </div>
   </div>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script src="registration.js"></script>
+  </body>
 </html>
