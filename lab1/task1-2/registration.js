@@ -1,4 +1,4 @@
-function checkEmail(str){
+﻿function checkEmail(str){
   var result = str.match(/^[0-9a-z-\.]+\@[0-9a-z-]{1,}\.[a-z]{2,}$/i);
   if (!result){
     alert('Введите валидный e-mail.');
@@ -34,9 +34,11 @@ function registration()
   var passConfirm = document.getElementsByClassName("password_block_password_repeat")[0].value;
   if (checkEmail(email) && checkPassword(pass, passConfirm) && checkAgreementRules()) {
     alert("Регистрация прошла успешно!");
+    return true;
   }
+ return false;
 }
 
 document.getElementsByClassName("registration")[0].onsubmit = function() {
-  registration();
+  return registration();
 };
