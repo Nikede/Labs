@@ -3,13 +3,30 @@ import java.io.*;
 public class create_project {
 
   public static void main(String[] args) throws Exception {
+	  
+	  File css_folder;
+	  File js_folder;
+	  File html;
+	  File css;
+	  File js;
+	  File destination = new File(System.getProperty("user.dir"));
 
-    File css_folder = new File("css");
-    File js_folder = new File("js");
+    if (args.length == 0) {
+      css_folder = new File("css");
+      js_folder = new File("js");
 
-    File html = new File(System.getProperty("user.dir"), "index.html");
-    File css = new File(css_folder.toString(), "style.css");
-    File js = new File(js_folder.toString(), "app.js");
+      html = new File(System.getProperty("user.dir"), "index.html");
+      css = new File(css_folder.toString(), "style.css");
+      js = new File(js_folder.toString(), "app.js");
+    } else {
+      css_folder = new File(args[0] + "\\css");
+      destination = new File(args[0]);
+      js_folder = new File(args[0] + "\\js");
+
+      html = new File(args[0], "index.html");
+      css = new File(css_folder.toString(), "style.css");
+      js = new File(js_folder.toString(), "app.js");
+    }
 		
     String html_string = "<!DOCTYPE html>\r\n" + 
       "<html lang=\"en\">\r\n" + 
@@ -49,11 +66,17 @@ public class create_project {
 		
     boolean done = false;
 
+    if(args.length > 0 && !destination.exists()) {
+    	destination.mkdir();
+    }
+
     if (!html.exists()) {
+      System.out.println(html.toString());
       done = html.createNewFile();
       FileWriter html_fw = new FileWriter(html, false);
       html_fw.write(html_string);
       html_fw.flush();
+      html_fw.close();
     } else System.out.println("HTML file already exists");
 	
     if (!css_folder.exists()) {
@@ -64,6 +87,7 @@ public class create_project {
       FileWriter css_fw = new FileWriter(css, false);
       css_fw.write(css_string);
       css_fw.flush();
+      css_fw.close();
     } else System.out.println("CSS file already exists");
 	
     if (!js_folder.exists()) {
@@ -74,6 +98,7 @@ public class create_project {
       FileWriter js_fw = new FileWriter(js, false);
       js_fw.write(js_string);
       js_fw.flush();
+      js_fw.close();
     } else System.out.println("JS file already exists");
 
     if (done) System.out.println("All files successfully created");

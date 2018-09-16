@@ -9,15 +9,13 @@ const groupList = [
  * Функция подписки на группы
  * @param group
  */
-function subscribeGroup(group) {
+function subscribeGroup(groupId) {
   let isExists = false;
-  groupList.forEach(function(item){
-    if (item.groupName === group) {
-      myGroups.push(group);
-      exists = true;
-    }
-  });
-  if (!exists) {
+  if (groupList.length > groupId && myGroups.indexOf(groupId) < 0) {
+    myGroups.push(groupId);
+    isExists = true;
+  }
+  if (!isExists) {
     return false;
   } else {
     return true;
@@ -28,8 +26,9 @@ function subscribeGroup(group) {
  * Функция отписки от группы
  * @param group
  */
-function unsubscribeGroup(group) {
-  if ((myGroups.length > 0) && (myGroups.indexOf(group) >= 0)) {
+function unsubscribeGroup(groupId) {
+  if (myGroups.length > 0 && myGroups.indexOf(groupId) >= 0) {
+    myGroups.splice(myGroups.indexOf(groupId),1);
     return true;
   } else {
     return false;
