@@ -1,8 +1,8 @@
 ﻿const myGroups = []; // массив для хранения подписок на группы
 
 const groupList = [
-  { groupName: 'Habrahabr'},
-  { groupName: 'Web2018'},
+  { id: 1, groupName: 'Habrahabr'},
+  { id: 2, groupName: 'Web2018'},
 ];
 
 /**
@@ -10,16 +10,15 @@ const groupList = [
  * @param group
  */
 function subscribeGroup(groupId) {
-  let isExists = false;
-  if (groupList.length > groupId && myGroups.indexOf(groupId) < 0) {
-    myGroups.push(groupId);
-    isExists = true;
-  }
-  if (!isExists) {
-    return false;
-  } else {
-    return true;
-  }
+  if (myGroups.indexOf(groupId) >= 0) return false;
+  let isExist = false;
+  groupList.forEach(function (item) {
+    if (item.id === groupId) {
+      myGroups.push(groupId);
+      isExist = true;
+    }
+  })
+  return isExist;
 }
 
 /**
@@ -27,10 +26,9 @@ function subscribeGroup(groupId) {
  * @param group
  */
 function unsubscribeGroup(groupId) {
-  if (myGroups.length > 0 && myGroups.indexOf(groupId) >= 0) {
+  if (myGroups.indexOf(groupId) >= 0) {
     myGroups.splice(myGroups.indexOf(groupId),1);
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
