@@ -1,0 +1,61 @@
+body {
+  width: 601px;
+  height: 316px;
+  text-align: center;
+}
+
+#chat_window {
+  width: 601px;
+  height: 316px;
+  outline: 1px solid #000;
+  overflow-y: scroll;
+  text-align: left;
+  background: rgb(243, 243, 243);
+}
+
+.message_friend {
+  width: 345px;
+  margin: 17px;
+  outline: 1px solid #000;
+  float: left;
+  white-space: nowrap;
+  background: rgb(255, 242, 204);
+}
+
+.message_you {
+  width: 345px;
+  margin: 17px;
+  outline: 1px solid #000;
+  float: right;
+  white-space: nowrap;
+  background: #fff;
+}
+
+.message_sender {
+  margin: 13px;
+  font-weight: bold;
+}
+
+.message_text {
+  margin: 13px;
+}
+
+#message_write {
+  width: 576px;
+  height: 50px;
+  outline: 1px solid #000;
+  margin-top: 17px;
+  resize: none;
+  padding: 13px;
+  font: 14pt serif;
+}
+
+#btn_send-message {
+  text-align: center;
+  outline: 1px solid #000;
+  margin-top: 17px;
+  width: 175px;
+  height: 40px;
+  font-weight: bold;
+  font: 14pt serif;
+}
