@@ -28,7 +28,6 @@ section {
   padding-top: 80px;
 }
 
-
 .section-heading {
   text-align: center;
   margin-bottom: 60px;
@@ -50,7 +49,6 @@ section {
   letter-spacing: 0.5px;
 }
 
-
 .blue-button a {
   display: inline-block;
   background-color: #4883ff;
@@ -68,10 +66,9 @@ section {
   color: #4883ff;
 }
 
-
 /* Header Style */
 
-.cf:before, 
+.cf:before,
 .cf:after {
   content: '';
   display: table;
@@ -92,7 +89,6 @@ section {
   background-color: #fff;
 }
 
-
 #primary-nav-button {
   background: transparent;
   display: none;
@@ -112,11 +108,11 @@ section {
 }
 
 #primary-nav-button:hover {
-  background: rgba(0,0,0,0.05);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 #primary-nav-button.selected {
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 #primary-nav-button:before {
@@ -190,17 +186,17 @@ section {
 }
 
 .sub-menu li a {
-  line-height: 50px!important;
-  font-size: 13px!important;
+  line-height: 50px !important;
+  font-size: 13px !important;
   color: #7a7a7a;
 }
 
 .downarrow {
-    background: none;
-    display: inline-block;
+  background: none;
+  display: inline-block;
   padding: 0;
-    text-align: center;
-    min-width: 3px;
+  text-align: center;
+  min-width: 3px;
 }
 
 .sub-menu .downarrow {
@@ -238,7 +234,7 @@ section {
 
 #primary-nav .sub-menu {
   background: #fff;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
   min-width: 160px;
   z-index: 200;
 }
@@ -277,7 +273,7 @@ section {
   border-bottom: 1px solid #ddd;
 }
 
-#primary-nav.mobile li:first-child  {
+#primary-nav.mobile li:first-child {
   width: 100%;
   margin: 0;
   border-top: 1px solid #ddd;
@@ -290,7 +286,6 @@ section {
 #primary-nav.mobile li:last-child {
   border: none;
 }
-
 
 #primary-nav.mobile .sub-menu {
   float: left;
@@ -307,19 +302,17 @@ section {
 .mobile .downarrow,
 .mobile .sub-menu .downarrow {
   position: absolute;
-  top:42px;
+  top: 42px;
   right: 25px;
 }
 
 #primary-nav.mobile .sub-menu .downarrow:before {
   content: '\25be';
 }
+
 #primary-nav-button.mobile {
   display: inline-block;
 }
-
-
-
 
 /* Banner Style */
 
@@ -407,10 +400,10 @@ section.banner {
   box-shadow: none;
 }
 
-.submit-form input:focus{
+.submit-form input:focus {
   border-width: 0px;
-  outline:0; /* I have also tried outline:none */
-  -webkit-appearance:none;
+  outline: 0; /* I have also tried outline:none */
+  -webkit-appearance: none;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -446,17 +439,17 @@ section.banner {
   text-align: center;
 }
 
-.popular-places .owl-dots .owl-dot span  {
+.popular-places .owl-dots .owl-dot span {
   width: 12px;
   height: 12px;
-  background-color: #cdcdcd!important;
+  background-color: #cdcdcd !important;
   display: inline-block;
   border-radius: 50%;
   margin: 0 3px;
 }
 
 .popular-places .owl-dots .active span {
-  background-color: #4883ff!important;
+  background-color: #4883ff !important;
 }
 
 .popular-places .owl-dots button {
@@ -505,7 +498,6 @@ section.banner {
   z-index: 9;
 }
 
-
 .popular-places .popular-item .thumb .plus-button i {
   width: 30px;
   height: 30px;
@@ -519,10 +511,8 @@ section.banner {
 }
 
 .popular-places .popular-item .thumb .plus-button i:hover {
-  background-color: rgba(250,250,250,0.3);
+  background-color: rgba(250, 250, 250, 0.3);
 }
-
-
 
 section.featured-places {
   margin-top: 80px;
@@ -589,7 +579,7 @@ section.featured-places {
 
 .featured-places .featured-item .down-content {
   background-color: #fff;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   padding: 20px 20px 0px 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -646,9 +636,6 @@ section.featured-places {
   color: #4883ff;
 }
 
-
-
-
 section.our-services .service-item {
   text-align: center;
   border: 1px solid #ddd;
@@ -669,11 +656,11 @@ section.our-services .service-item h4 {
 }
 
 .our-services .left-content h4 {
-  font-size:  19px;
-  font-weight:  600;
-  color:  #232323;
+  font-size: 19px;
+  font-weight: 600;
+  color: #232323;
   margin-top: 0px;
-  margin-bottom:  25px;
+  margin-bottom: 25px;
 }
 
 .our-services .left-content .blue-button {
@@ -685,18 +672,23 @@ section.our-services .service-item h4 {
   margin-top: 60px;
   padding-top: 60px;
 }
+
 .accordion li {
   position: relative;
 }
+
 .accordion li a {
   border: 1px solid #ddd;
 }
+
 .accordion li:last-child a {
-  
+
 }
+
 .accordion li p {
   display: none;
 }
+
 .accordion a {
   width: 100%;
   display: block;
@@ -709,6 +701,7 @@ section.our-services .service-item h4 {
   padding: 15px 20px;
   text-decoration: none;
 }
+
 .accordion a:after {
   width: 15px;
   height: 15px;
@@ -723,6 +716,7 @@ section.our-services .service-item h4 {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
 .accordion p {
   margin: 0px;
   padding: 20px;
@@ -736,13 +730,11 @@ a.active:after {
   transition: all 0.2s ease-in-out;
 }
 
-
-
 section#video-container {
   margin-top: 80px;
 }
 
-#video-container  {
+#video-container {
   position: relative;
   width: 100%;
   height: 560px;
@@ -762,7 +754,7 @@ section#video-container {
 
 #video-container .video-overlay {
   z-index: 9999;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
 }
 
@@ -808,13 +800,11 @@ section#video-container {
   text-align: center;
   line-height: 56px;
   color: #fff;
-  background-color: rgba(250,250,250,0.1);
+  background-color: rgba(250, 250, 250, 0.1);
   font-size: 18px;
   border: 3px solid #fff;
   border-radius: 50%;
 }
-
-
 
 section.pricing-tables .table-item {
   text-align: center;
@@ -849,7 +839,7 @@ section.pricing-tables .table-item .top-content h1 {
 }
 
 section.pricing-tables .table-item ul {
-  margin: 40px 0px!important;
+  margin: 40px 0px !important;
 }
 
 section.pricing-tables .table-item ul li {
@@ -889,6 +879,7 @@ section.contact .section-heading {
   border: 2px solid #4883ff;
   transition: all 0.5s;
 }
+
 .modal-btn:hover {
   background-color: transparent;
   color: #4883ff;
@@ -896,7 +887,7 @@ section.contact .section-heading {
 
 /* Modal */
 .modal {
-  background-color: rgba(0,0,0,.65);
+  background-color: rgba(0, 0, 0, .65);
   display: none;
   overflow: auto;
   position: fixed;
@@ -912,8 +903,9 @@ section.contact .section-heading {
 
 .modal-content .section-heading {
   text-align: left;
-  margin-top: 0px!important;
+  margin-top: 0px !important;
 }
+
 .modal-content .section-heading h2 {
   margin-top: 10px;
 }
@@ -1019,15 +1011,18 @@ section.contact .section-heading {
   width: 60%;
   margin: 0 auto;
   background-color: #fff;
-  //background-color: #fff;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+/ / background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .modal-animated-in {
   animation: totop-in .3s ease;
 }
+
 .modal-animated-out {
   animation: totop-out .3s ease forwards;
 }
+
 .modal-content .close {
   position: absolute;
   right: -30px;
@@ -1058,7 +1053,7 @@ section.contact .section-heading {
   100% {
     top: 0;
     opacity: 1;
-  }  
+  }
 }
 
 @keyframes totop-out {
@@ -1069,10 +1064,8 @@ section.contact .section-heading {
   100% {
     top: -100%;
     opacity: 0;
-  }  
+  }
 }
-
-
 
 footer {
   margin-top: 80px;
@@ -1087,7 +1080,6 @@ footer .footer-heading h4 {
   margin-top: 15px;
   margin-bottom: 40px;
 }
-
 
 footer .about-veno .logo {
   margin-bottom: 40px;
@@ -1179,8 +1171,7 @@ footer .contact-info ul li a {
   color: #4883ff;
 }
 
-
-@media (max-width:992px) {
+@media (max-width: 992px) {
 
   .banner .banner-caption {
     padding: 200px 30px;
@@ -1226,12 +1217,13 @@ footer .contact-info ul li a {
   .modal-content {
     width: 90%;
   }
+
   .modal-content .close {
     right: 50%;
     left: 50%;
     transform: translateX(-50%);
     top: -30px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   }
 
   footer .useful-links {
@@ -1241,5 +1233,5 @@ footer .contact-info ul li a {
   footer .contact-info {
     margin-top: 60px;
   }
-  
+
 }
