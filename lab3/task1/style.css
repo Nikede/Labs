@@ -13,21 +13,20 @@ body {
   background: rgb(243, 243, 243);
 }
 
-.message_friend {
+.message {
   width: 345px;
   margin: 17px;
   outline: 1px solid #000;
-  float: left;
   white-space: nowrap;
+}
+
+.message.friend {
+  float: left;
   background: rgb(255, 242, 204);
 }
 
-.message_you {
-  width: 345px;
-  margin: 17px;
-  outline: 1px solid #000;
+.message.you {
   float: right;
-  white-space: nowrap;
   background: #fff;
 }
 
