@@ -1,10 +1,9 @@
 function getUserProfileFromObj(profile) {
-  if (typeof profile === 'object' && 'id' in profile && 'username' in profile && 'email' in profile) {
-    profileToReturn = {
+  if (typeof profile === 'object' && 'username' in profile && 'email' in profile) {
+    return {
       username: profile.username,
       email: profile.email
-    }
-    return profileToReturn;
+    };
   }
   return null;
 }

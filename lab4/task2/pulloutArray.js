@@ -1,10 +1,9 @@
 function pulloutArray(input) {
   let arrayToReturn = [];
   if (typeof input !== 'object' || input === null) {
-    return Error;
+    throw new Error("Not an array!");
   }
   if (input.length === 0) {
-    input = arrayToReturn;
     return arrayToReturn;
   }
   for (i = 0; i < input.length; i++) {
@@ -20,6 +19,5 @@ function pulloutArray(input) {
       }
     }
   }
-  input = arrayToReturn;
   return arrayToReturn;
 }

@@ -1,13 +1,11 @@
 let Like = {
   count: 0,
-  getDisLike: function () {
+  doDisLike: function () {
     if (this.count > 0) {
       this.count--;
     }
-    return this.count;
   },
-  getLike: function () {
+  doLike: function () {
       this.count++;
-      return this.count;
   }
 }
