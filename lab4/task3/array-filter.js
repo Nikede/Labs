@@ -1,20 +1,51 @@
+/**
+ * Determines if the number is odd.
+ *
+ * @param {number} number - number.
+ * @return {boolean} is odd.
+ */
 var odd = function (number) {
   return number % 2 === 1;
 }
 
+/**
+ * Determines if the number is even.
+ *
+ * @param {number} number - number.
+ * @return {boolean} is even.
+ */
 var even = function (number) {
   return number % 2 === 0 && number !== 0;
 }
 
-
+/**
+ * Determines whether the number isn't equal 0.
+ *
+ * @param {number} number - number.
+ * @return {boolean} is 0.
+ */
 var eliminateZero = function (number) {
   return number !== 0;
 }
 
+/**
+ * Defines every second number.
+ *
+ * @param {number} number - number.
+ * @param {number} index - index.
+ * @return {boolean} is 0.
+ */
 var everySecond = function (number, index) {
   return index % 2 === 1;
 }
 
+/**
+ * Applies a filter to an array.
+ *
+ * @param {object} arr - Number array.
+ * @param {function} filter - filter function.
+ * @return {object} filtred array.
+ */
 function filterArray(arr, filter) {
   var resultArray = [];
   for (i = 0; i < arr.length; i++) {

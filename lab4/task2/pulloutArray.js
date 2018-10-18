@@ -1,3 +1,10 @@
+/**
+ * Leaves only numbers in the array.
+ *
+ * @param {object} input - Array.
+ * @return {object} Number array.
+ * @throws Will throw an error if the argument isn't an array.
+ */
 function pulloutArray(input) {
   let arrayToReturn = [];
   if (typeof input !== 'object' || input === null) {
