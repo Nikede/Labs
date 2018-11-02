@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="page">
+    <header class="header"></header>
+    <main class="content">
+      <form class="registration">
+        <p class="registration_text_header">Регистрация</p>
+        <p class="registration_text_email">E-mail:<input class="registration_login registration_login_active"></p>
+        <p class="registration_text_email" style="color:red"></p>
+        <p class="registration_text_email" style="margin-left:252px">Телефон:<input class="registration_login registration_login_active" id="phone" placeholder="+7 (999) 999-99-99"></p>
+        <p class="registration_text_email" style="color:red"></p>
+        <div class="password_block">
+          <p class="password_block_text_password">Пароль:<input class="password_block_password password_block_password_active" type="password"></p>
+          <p class="password_block_text_password" style="color:red"></p>
+          <p class="password_block_text_password_confirmation">Подтверждение пароля:<input class="password_block_password password_block_password_repeat password_block_password_active" type="password"></p>
+          <p class="password_block_text_password_confirmation" style="color:red"></p>
+        </div>
+        <input class="registration_check_confirmation" type="checkbox">
+        <label>Я согласен с условиями и правилами сайта</label>
+        <p class="registration_check_confirmation" style="color:red"></p>
+        <p><input class="registration_button registration_button_active" type="button" value="Войти"></p>
+        <p><input class="registration_button registration_button_active" type="submit" value="Регистрация"></p>
+      </form>
+    </main>
+    <div class="footer">
+    </div>
+  </div>
+  <script src="js/registration.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-1.3.1.min.js"
+  integrity="sha256-F+wfFu+siTub2Ju6XxPLHgv5OL3Jzs5srj7Xfxj6b9c="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#phone").mask("+7 (999) 999-99-99");
+    })
+  </script>
+  </body>
+</html>
