@@ -19,7 +19,7 @@ document.getElementById("GetFilms").onclick = function () {
   if (thriller.checked) filters += ' триллер@xfilm';
   if (melodrama.checked) filters += ' мелодрама@xfilm';
   if (comedy.checked) filters += ' комедия@xfilm';
-  var request = 'https://api.vk.com/method/wall.search?&query=Kinopoisk:&owners_only=1&domain=xfilm&access_token=cbb2acb5cbb2acb5cbb2acb51acbda8969ccbb2cbb2acb597f198377e74de689a142c45&v=5.52';
+  var request = 'https://api.vk.com/method/wall.search?&count=100&query=Kinopoisk:&owners_only=1&domain=xfilm&access_token=cbb2acb5cbb2acb5cbb2acb51acbda8969ccbb2cbb2acb597f198377e74de689a142c45&v=5.52';
   $.ajax({
     url: request,
     method: 'GET',
