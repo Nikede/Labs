@@ -6,7 +6,8 @@ const paymentSchema = mongoose.Schema({
     sum: Number,
     description: String,
     date: String,
-    accepted: Boolean
+    accepted: Boolean,
+    returned: Boolean
 });
 
 module.exports = mongoose.model('Payment', paymentSchema);
